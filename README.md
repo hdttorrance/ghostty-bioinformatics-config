@@ -1,3 +1,13 @@
+# 🧬 Ghostty Configuration for Bioinformatics
+
+A customized **Ghostty** terminal configuration optimized for bioinformatics workflows, data analysis, and sequence alignment on macOS.
+
+![Ghostty Banner](https://ghostty.org/assets/images/logo.png)
+
+## ⚡️ Overview
+
+This configuration is designed to balance **aesthetics** (Catppuccin Mocha theme) with **precision** and **performance**. It is specifically tuned for:
+
 * **Sequence Alignment:** Ligatures are *disabled* to ensure distinct character rendering (e.g., ensuring `=>` or `==` don't merge, which is critical when viewing raw sequence data or code).
 * **Large Log Files:** A massive scrollback limit (100k lines) for reviewing extensive pipeline outputs (Nextflow, Snakemake, Bowtie2 logs).
 * **Window Management:** Custom keybindings for quick splitting and resizing without touching the mouse.
@@ -30,6 +40,9 @@ mv ~/.config/ghostty/config ~/.config/ghostty/config.backup
 # 3. Create Symlink
 ln -s ~/ghostty-bioinformatics-config/config ~/.config/ghostty/config
 
+⌨️ Custom Keybindings
+This config uses Ctrl + Shift modifiers for window management to avoid conflicts with standard shell commands.
+
 Keybinding
 Ctrl + Shift + D	Split Pane Right
 Ctrl + Shift + S	Split Pane Down
@@ -37,3 +50,14 @@ Ctrl + Shift + T	New Tab
 Ctrl + Shift + Arrows	Navigate Splits
 Ctrl + + / Ctrl + -	Zoom Font
 Ctrl + 0		Reset Font
+
+🧬 Bioinformatics Optimizations
+Scrollback Limit: Set to 100,000 lines.
+
+Why? Essential when running long alignments or builds where you need to scroll up to find the initial error or command.
+
+Clipboard Integration: Read/Write allowed.
+
+Why? Seamless copying of FASTA headers, gene IDs, or error logs directly to/from the system clipboard.
+
+Window Padding: Balanced (8px) for readability without wasting screen real estate.
