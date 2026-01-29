@@ -2,8 +2,6 @@
 
 A customized **Ghostty** terminal configuration optimized for bioinformatics workflows, data analysis, and sequence alignment on macOS.
 
-![Ghostty Banner](https://ghostty.org/assets/images/logo.png)
-
 ## ⚡️ Overview
 
 This configuration is designed to balance **aesthetics** (Catppuccin Mocha theme) with **precision** and **performance**. It is specifically tuned for:
